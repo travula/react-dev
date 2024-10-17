@@ -35,13 +35,13 @@ Getting the code to Run
 # Clone the repo
 
 ```
-git clone 
+git clone https://github.com/travula/react-dev.git
 ```
 
 # Install the node packages
 - Change directory
   ```
-  cd 
+  cd react-dev
   ```
 - Install packages
   ```
