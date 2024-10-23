@@ -1,57 +1,18 @@
-Getting the code to Run
-=========================
+README
+======
 
-# Install Nodejs
+# Introduction
+This is an index to the project.
 
-## Install NVM
+# About
+A [short note](./doc/about.md) about this project
 
-- [Reference](https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/)
-- Install nvm
-  ```
-  curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash
-  ```
-  
-- source `~/.bashrc` :: The above command makes changes to
-  `~/.bashrc`.  To load this changes in the current console,
-  run the below command.
-  ```
-  source ~/.bashrc
-  ```
-  
-## Install NPM
+# Start the Application
+Check out the [steps](./doc/start-the-application.md) to
+start the application.
 
-- To install the lastest LTS version of `node`, run the
-  below command.
+# How to use this resource
+[Notes](./doc/how-to-use.md) on how to use this resource.
 
-  ```
-  nvm install --lts
-  ```
-  
-- Check the version
-  ```
-  node -v
-  ```
-  
-# Clone the repo
-
-```
-git clone https://github.com/travula/react-dev.git
-```
-
-# Install the node packages
-- Change directory
-  ```
-  cd react-dev
-  ```
-- Install packages
-  ```
-  npm install
-  ```
-  
-- Start the server
-  ```
-  npm start
-  ```
-
-
-
+# Learning Notes
+[Notes](./doc/notes.md) of my understanding of the tutorial.

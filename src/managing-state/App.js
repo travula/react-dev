@@ -1,5 +1,7 @@
 import Form from "./stateInput";
 import Accordion from "./accordian";
+import Messenger from "./preserveAndResetState";
+import ContactList from "./contactList";
 
 export default function App() {
   return (
@@ -9,6 +11,8 @@ export default function App() {
       <br />
       <br />
       <Accordion />
+      <br />
+      <Messenger />
     </>
   );
 }
