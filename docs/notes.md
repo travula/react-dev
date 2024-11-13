@@ -5,6 +5,7 @@ Notes on the learning
 
 1. State allows us think declaratively about the design of
    the UI.
+
 2. The view is a function of the state.  We declare these
    states and implement their corresponding views. Once this
    is achieved, the next step is to link the input to the
@@ -47,15 +48,24 @@ Notes on the learning
       ```
       F(Xi, Yi) = Yi+1, where Xi is the input and Yi is the state
       ```
+4. How to structure the state  
+   a. Always merge the state when two or more state
+   variables get updated. For example if both `x` and `y`
+   coordinates are to be updated at the same time, it is
+   preferable to contain both `x` and `y` in a single state
+   variable.  
+   b. Ensure the state declaration does not allow for
+   impossible states.  For example, when states `sending`
+   and `sent` are mutually exclusive, the state declaration
+   should not allow for both the states to be true.  
+   c. Avoid and redundancy and duplication of
+   state. Redundancy implies the redundant state can be
+   inferred from other states, while duplication means same
+   information is captured in multiple state variables.  
+   d. Avoid deeply nested states. Keep the state structure
+   flat or normalized.
 
-  
+5. 
    
-  
       
-
-
-
-   
-   
-   
-
+  

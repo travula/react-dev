@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>notes.html</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+</head>
+
+<body>
+
+<h1 id="notes-on-the-learning">Notes on the learning</h1>
+<h1 id="state">State</h1>
+<ol type="1">
+<li><p>State allows us think declaratively about the design of the
+UI.</p></li>
+<li><p>The view is a function of the state. We declare these states and
+implement their corresponding views. Once this is achieved, the next
+step is to link the input to the corresponding state change.</p>
+<p>An input changes the state, this change in state has a corresponding
+view. All input changes are tracked by event handlers and these event
+handlers are ties to state changes.</p>
+<p>The state machine is formalized by</p>
+<pre><code>F(Xi, Yi) = Yi+1 and the projection definition - H(Yi) =
+Zi, where Zi is the ith view.</code></pre></li>
+<li><p>This is achieved by the following steps.</p>
+<ol type="a">
+<li><p>Identify all the visual states of the component. This is done by
+creating a mapping between the visual states and the and the different
+states of the component.</p>
+<pre><code>H(Yi) = Zi, where, Yi is the state and Zi is the
+corresponding view</code></pre></li>
+<li><p>Determine the events that trigger the state changes. These events
+are either driven by users or by the computer like accessing a web
+service etc.</p></li>
+<li><p>Represent the state in memory with <code>useState</code>. The
+function <code>F</code> sets the state based on the input and the
+application’s logic.</p></li>
+<li><p>Structure the state to remove non-essentials and avoid bugs and
+paradoxes.</p></li>
+<li><p>Map the events identified in step <code>b</code> to state
+changes.</p>
+<pre><code>F(Xi, Yi) = Yi+1, where Xi is the input and Yi is the state</code></pre></li>
+</ol></li>
+<li><p>How to structure the state</p>
+<ol type="a">
+<li>Always merge the state when two or more state variables get updated.
+For example if both <code>x</code> and <code>y</code> coordinates are to
+be updated at the same time, it is preferable to contain both
+<code>x</code> and <code>y</code> in a single state variable.<br />
+</li>
+<li>Ensure the state declaration does not allow for impossible states.
+For example, when states <code>sending</code> and <code>sent</code> are
+mutually exclusive, the state declaration should not allow for both the
+states to be true.<br />
+</li>
+<li>Avoid and redundancy and duplication of state. Redundancy implies
+the redundant state can be inferred from other states, while duplication
+means same information is captured in multiple state variables.<br />
+</li>
+<li>Avoid deeply nested states. Keep the state structure flat or
+normalized.</li>
+</ol></li>
+<li></li>
+</ol>
+
+</body>
+</html>

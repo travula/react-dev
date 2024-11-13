@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>start-the-application.html</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+</head>
+
+<body>
+
+<h1 id="getting-the-code-to-run">Getting the code to Run</h1>
+<h1 id="install-nodejs">Install Nodejs</h1>
+<h2 id="install-nvm">Install NVM</h2>
+<ul>
+<li><p><a
+href="https://www.linode.com/docs/guides/how-to-install-use-node-version-manager-nvm/">Reference</a></p></li>
+<li><p>Install nvm</p>
+<pre><code>curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.37.2/install.sh | bash</code></pre></li>
+<li><p>The command in the previous step makes changes to
+<code>~/.bashrc</code>. To load these changes in the current console,
+run the below command.</p>
+<pre><code>source ~/.bashrc</code></pre></li>
+</ul>
+<h2 id="install-npm">Install NPM</h2>
+<ul>
+<li><p>To install the lastest LTS version of <code>node</code>, run the
+below command.</p>
+<pre><code>nvm install --lts</code></pre></li>
+<li><p>Check the version</p>
+<pre><code>node -v</code></pre></li>
+</ul>
+<h1 id="clone-the-repo">Clone the repo</h1>
+<pre><code>git clone https://github.com/travula/react-dev.git</code></pre>
+<h1 id="install-the-node-packages">Install the node packages</h1>
+<ul>
+<li><p>Change directory</p>
+<pre><code>cd react-dev</code></pre></li>
+<li><p>Install packages</p>
+<pre><code>npm install</code></pre>
+<h1 id="start-the-web-server">Start the web server</h1></li>
+<li><p>Start the server</p>
+<pre><code>npm start</code></pre></li>
+</ul>
+
+</body>
+</html>

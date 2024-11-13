@@ -4,6 +4,11 @@ import Messenger from "./preserveAndResetState";
 import ContactList from "./contactList";
 import AllViews from "./allViews";
 import Picture from "./picture";
+import ProfileEditor from "./profileEditor";
+import MovingDot from "./moving-dot";
+import FeedbackForm from "./avoid-contradictions";
+import RedundantState from "./redundant-state";
+import Menu from "./duplicate-state";
 
 export default function App() {
   return (
@@ -26,6 +31,13 @@ export default function App() {
       <Picture />
       <br />
       <br />
+      <ProfileEditor />
+      <br />
+      <br />
+      {/* <MovingDot /> */}
+      <FeedbackForm />
+      <RedundantState />
+      <Menu />
     </>
   );
 }
