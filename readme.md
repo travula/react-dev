@@ -5,14 +5,14 @@ README
 This is an index to the project.
 
 # About
-A [short note](./doc/about.md) about this project
+A [short note](./docs/about.md) about this project
 
 # Start the Application
-Check out the [steps](./doc/start-the-application.md) to
+Check out the [steps](./docs/start-the-application.md) to
 start the application.
 
 # How to use this resource
-[Notes](./doc/how-to-use.md) on how to use this resource.
+[Notes](./docs/how-to-use.md) on how to use this resource.
 
 # Learning Notes
-[Notes](./doc/notes.md) of my understanding of the tutorial.
+[Notes](./docs/notes.md) of my understanding of the tutorial.
